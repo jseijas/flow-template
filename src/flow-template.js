@@ -17,7 +17,8 @@ class FlowTemplate {
       this.settings.defaultLocale = 'en';
     }
     i18n.configure({
-      directory: this.settings.localesPath
+      directory: this.settings.localesPath,
+      updateFiles: false
     });
     i18n.setLocale(this.settings.defaultLocale);
   }
